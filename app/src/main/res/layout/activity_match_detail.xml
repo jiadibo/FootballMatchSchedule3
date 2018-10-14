@@ -1,0 +1,334 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".views.match.MatchDetailActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:textSize="13dp"
+                android:textStyle="bold"
+                android:textColor="@color/colorPrimary"
+                android:id="@+id/date_match"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="22-10-2018" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="6dp"
+            android:paddingRight="6dp">
+
+            <ImageView
+                android:id="@+id/badge_team1"
+                android:layout_width="160dp"
+                android:layout_height="150dp"
+                android:layout_weight="1"
+                android:src="@drawable/ic_launcher_background" />
+
+            <TextView
+                android:id="@+id/skor_team1"
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="2"
+                android:textSize="30dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="70dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="VS"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@id/skor_team2"
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="3"
+                android:textSize="30dp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/badge_team2"
+                android:layout_width="160dp"
+                android:layout_height="160dp"
+                android:layout_weight="1"
+                android:src="@drawable/ic_launcher_background" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/team_1"
+                android:textSize="18dp"
+                android:textStyle="bold"
+                android:textColor="@color/colorPrimary"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="Barcelona" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="" />
+
+
+            <TextView
+                android:id="@+id/team_2"
+                android:textSize="18dp"
+                android:textStyle="bold"
+                android:textColor="@color/colorPrimary"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="Barcelona" />
+        </LinearLayout>
+        <View
+            android:background="@color/colorPrimary"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingLeft="4dp"
+            android:paddingRight="4dp">
+            <TextView
+                android:layout_weight="1"
+                android:id="@+id/goals1"
+                android:layout_width="170dp"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:text="20'Al"/>
+            <TextView
+                android:layout_weight="1"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:text="Goals"
+                android:gravity="center"
+                android:textColor="@color/colorPrimary"/>
+            <TextView
+                android:layout_weight="1"
+                android:id="@+id/goals2"
+                android:gravity="right"
+                android:layout_width="170dp"
+                android:layout_height="wrap_content"
+                android:text="20'Al"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingLeft="4dp"
+            android:paddingRight="4dp">
+            <TextView
+                android:layout_weight="1"
+                android:id="@+id/shots1"
+                android:layout_width="170dp"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:text="2"/>
+            <TextView
+                android:layout_weight="1"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:text="Shots"
+                android:gravity="center"
+                android:textColor="@color/colorPrimary"/>
+            <TextView
+                android:layout_weight="1"
+                android:id="@+id/shots2"
+                android:gravity="right"
+                android:layout_width="170dp"
+                android:layout_height="wrap_content"
+                android:text="3"/>
+
+        </LinearLayout>
+        <View
+            android:background="@color/colorPrimary"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Lineups"
+            android:gravity="center"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingLeft="4dp"
+            android:paddingRight="4dp">
+            <TextView
+                android:layout_weight="1"
+                android:id="@+id/gkeepr1"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:text="Habib"/>
+            <TextView
+                android:layout_weight="1"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:text="Goal Keeper"
+                android:gravity="center"
+                android:textColor="@color/colorPrimary"/>
+            <TextView
+                android:layout_weight="1"
+                android:id="@+id/gkeepr2"
+                android:gravity="right"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:text="Habib"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingLeft="4dp"
+            android:paddingRight="4dp">
+            <TextView
+                android:layout_weight="1"
+                android:id="@+id/defense1"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:text="Habib"/>
+            <TextView
+                android:layout_weight="1"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:text="Defense"
+                android:gravity="center"
+                android:textColor="@color/colorPrimary"/>
+            <TextView
+                android:layout_weight="1"
+                android:id="@+id/defense2"
+                android:gravity="right"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:text="Habib"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingLeft="4dp"
+            android:paddingRight="4dp">
+            <TextView
+                android:layout_weight="1"
+                android:id="@+id/midfield1"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:text="Habib"/>
+            <TextView
+                android:layout_weight="1"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:text="Midfield"
+                android:gravity="center"
+                android:textColor="@color/colorPrimary"/>
+            <TextView
+                android:layout_weight="1"
+                android:id="@+id/midfield2"
+                android:gravity="right"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:text="Habib"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingLeft="4dp"
+            android:paddingRight="4dp">
+            <TextView
+                android:layout_weight="1"
+                android:id="@+id/forward1"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:text="Habib"/>
+            <TextView
+                android:layout_weight="1"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:text="Forward"
+                android:gravity="center"
+                android:textColor="@color/colorPrimary"/>
+            <TextView
+                android:layout_weight="1"
+                android:id="@+id/forward2"
+                android:gravity="right"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:text="Habib"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingLeft="4dp"
+            android:paddingRight="4dp">
+            <TextView
+                android:layout_weight="1"
+                android:id="@+id/subtitus1"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:text="Habib"/>
+            <TextView
+                android:layout_weight="1"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:text="Subtitues"
+                android:gravity="center"
+                android:textColor="@color/colorPrimary"/>
+            <TextView
+                android:layout_weight="1"
+                android:id="@+id/subtitus2"
+                android:gravity="right"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:text="Habib"/>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</ScrollView>
