@@ -19,7 +19,6 @@
             </intent-filter>
         </activity>
         <activity android:name=".views.main.fragment.FirstFragment" />
-        <activity android:name=".views.main.fragment.SecondFragment" />
         <activity android:name=".views.match.MatchDetailActivity"
             android:label="Match Detail"></activity>
     </application>

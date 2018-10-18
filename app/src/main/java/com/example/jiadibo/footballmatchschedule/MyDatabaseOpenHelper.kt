@@ -26,12 +26,12 @@ class MyDatabaseOpenHelper(ctx: Context): ManagedSQLiteOpenHelper(ctx, "Favorite
         //disini membuat tabel
             p0?.createTable(Favorite.TABLE_FAVORITE, true,
                     Favorite.ID to INTEGER + PRIMARY_KEY + AUTOINCREMENT,
-                    Favorite.MATCH_ID to TEXT + UNIQUE,
+                    Favorite.MATCH_ID to TEXT+ UNIQUE,
                     Favorite.HOME_ID to TEXT,
                     Favorite.AWAY_ID to TEXT,
                     Favorite.HOME_NAME to TEXT,
-                    Favorite.HOME_SCORE to TEXT,
                     Favorite.AWAY_NAME to TEXT,
+                    Favorite.HOME_SCORE to TEXT,
                     Favorite.AWAY_SCORE to TEXT,
                     Favorite.DATE_EVENT to TEXT
                     )

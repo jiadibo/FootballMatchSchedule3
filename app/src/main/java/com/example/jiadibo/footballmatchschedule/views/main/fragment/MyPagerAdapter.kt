@@ -8,11 +8,17 @@ class MyPagerAdapter(fm: FragmentManager) : FragmentPagerAdapter(fm) {
     override fun getItem(position: Int): Fragment {
         return when (position){
             0 -> {
-                FirstFragment()
+                FirstFragment().apply {
+                    mode = FirstFragment.Mode.PREVIOUS
+                }
             }
-            1 -> SecondFragment()
+            1 -> FirstFragment().apply {
+                mode = FirstFragment.Mode.DEFAULT
+            }
             else -> {
-                return ThirdFragment()
+                return FirstFragment().apply {
+                    mode = FirstFragment.Mode.FAVORITE
+                }
             }
         }
     }
@@ -23,9 +29,13 @@ class MyPagerAdapter(fm: FragmentManager) : FragmentPagerAdapter(fm) {
 
     override fun getPageTitle(position: Int): CharSequence? {
         return when (position){
-            0 -> "Last Match"
-            1 -> "Next Match"
-            else -> {
+            0 -> {
+                "Last Match"
+            }
+
+            1 -> {
+                "Next Match"
+            } else -> {
                 return "Favorite"
             }
         }

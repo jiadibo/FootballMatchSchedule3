@@ -25,10 +25,10 @@ class MainAdapter(private val teams: MutableList<Match>,
 
     class TeamViewHolder(view: View) : RecyclerView.ViewHolder(view) {
 
-        private val teamName1: TextView = view.find(R.id.team_1)
-        private val teamName2: TextView = view.find(R.id.team_2)
-        private val teamSkor1: TextView = view.find(R.id.skor_team1)
-        private val teamSkor2: TextView = view.find(R.id.skor_team2)
+        private val teamName1: TextView = view.find(R.id.team_Home)
+        private val teamName2: TextView = view.find(R.id.team_Away)
+        private val teamSkor1: TextView = view.find(R.id.skor_teamHome)
+        private val teamSkor2: TextView = view.find(R.id.skor_teamAway)
         private val dateMatch: TextView = view.find(R.id.date_match)
 
         fun bindItem(teams: Match, listener: (Match) -> Unit) {

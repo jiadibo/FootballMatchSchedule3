@@ -36,10 +36,10 @@ class MatchDetailActivity : AppCompatActivity(), DetailView {
 
         match = intent.getParcelableExtra<Match>("MATCH_OBJECT")
         date_match.text = match.dateEvent
-        team_1.text = match.strHomeTeam
-        team_2.text = match.strAwayTeam
-        skor_team1.text = match.intHomeScore
-        skor_team2.text = match.intAwayScore
+        team_Home.text = match.strHomeTeam
+        team_Away.text = match.strAwayTeam
+        skor_teamHome.text = match.intHomeScore
+        skor_teamAway.text = match.intAwayScore
         goals1.text = match.strHomeGoalDetails
         goals2.text = match.strAwayGoalDetails
         shots1.text = match.intHomeShots
@@ -94,8 +94,8 @@ class MatchDetailActivity : AppCompatActivity(), DetailView {
                         Favorite.HOME_ID to match.idHomeTeam,
                         Favorite.AWAY_ID to match.idAwayTeam,
                         Favorite.HOME_NAME to match.strHomeTeam,
-                        Favorite.HOME_SCORE to match.intHomeScore,
                         Favorite.AWAY_NAME to match.strAwayTeam,
+                        Favorite.HOME_SCORE to match.intHomeScore,
                         Favorite.AWAY_SCORE to match.intAwayScore,
                         Favorite.DATE_EVENT to match.idEvent
 

@@ -156,7 +156,7 @@ data class DetailMatch(
 )
 
 
-data class DetailResponse(
+data class   DetailResponse(
         @SerializedName("teams")
         val events : MutableList<DetailMatch>
 )
